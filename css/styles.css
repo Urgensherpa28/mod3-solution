@@ -1,0 +1,97 @@
+body {
+  font-size: 16px;
+  background-color: rgba(151, 196, 255, 0.322);
+  font-family: 'Oxygen', sans-serif;
+  color: #443850;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: rgba(255, 235, 205, 0.534);
+  border-radius: 0;
+  border: 1px solid rgb(255, 195, 105);
+  padding-bottom: 8px;
+}
+
+.container {
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #443850;
+  font-size: 2.0em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 1px solid rgb(255, 195, 105);
+}
+#nav-list a {
+  color: rgb(202, 162, 177);
+  text-align: center;
+}
+#nav-list a:hover {
+  background: rgb(182, 182, 182);
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+.container-fluid {
+  background-color: lightsteelblue;
+  position: relative;
+  height: auto;
+  width: auto;
+  border: 2px solid rgb(255, 195, 105);
+  padding: 30px;
+  margin: 10px;
+}
+
+.container-fluid h3 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* EXTRA SMALL */
+@media (max-width: 767px) {
+  /* Header */
+
+  #header-nav {
+    border: 1px solid rgb(255, 195, 105);
+    padding-bottom: 0px;
+  }
+
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    color: dimgray;
+    background-color: honeydew;
+  }
+
+  .container-fluid {
+    margin: 10px;
+  }
